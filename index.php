@@ -1,4 +1,4 @@
-<?php include 'class.Avatar.php'; ?>
+<?php include './class.avatar.php'; ?>
 <!doctype html>
 <html>
 <head>
@@ -15,15 +15,34 @@ $anna->setNose();
 $anna->setLips();
 $anna->setEyes();
 echo $anna->draw();
-?>
-<hr>
-<?php
+
 $sara = new Avatar('f');
 $sara->setHair('1','black');
 $sara->setNose('2');
 $sara->setLips('1','red');
 $sara->setEyes();
 echo $sara->draw();
+
+$elizabeth = new Avatar('f');
+$elizabeth->setHair('1','brown');
+$elizabeth->setNose('1');
+$elizabeth->setLips('1','red');
+$elizabeth->setEyes();
+echo $elizabeth->draw();
+
+$john = new Avatar('m');
+$john->setHair();
+$john->setNose();
+$john->setLips();
+$john->setEyes();
+echo $john->draw();
+
+$jack = new Avatar('m');
+$jack->setHair('1','brown');
+$jack->setNose('1');
+$jack->setLips('1');
+$jack->setEyes();
+echo $jack->draw();
 ?>
 
 </body>
